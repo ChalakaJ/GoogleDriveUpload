@@ -1,10 +1,11 @@
 $(document).ready(function () {
     // client id of the project
-    var clientId = "";
+    var clientId = "337291740711-t8kc9e9l1ar2qli3s8q2lkifu2cm5mpn.apps.googleusercontent.com";
 
 
     // redirect_uri of the project
     var redirect_uri = "http://127.0.0.1:5500/upload.html";
+    //var redirect_uri = "https://calcium-circuit-311810.firebaseapp.com/__/auth/handler";
 
     // scope of the project
     var scope = "https://www.googleapis.com/auth/drive";

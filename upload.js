@@ -1,11 +1,11 @@
 $(document).ready(function () {
     const urlParams = new URLSearchParams(window.location.search);
     const code = urlParams.get('code');
-    const redirect_uri = "http://127.0.0.1:5500/upload.html" // replace with your redirect_uri;
-    const client_secret = ""; // replace with your client secret
+    const redirect_uri = "http://127.0.0.1:5500/upload.html" ;
+    const client_secret = "cyG0V1BF1FdXB5yQBibhg9bN"; 
     const scope = "https://www.googleapis.com/auth/drive";
     var access_token = "";
-    var client_id = ""// replace it with your client id;
+    var client_id = "337291740711-t8kc9e9l1ar2qli3s8q2lkifu2cm5mpn.apps.googleusercontent.com";
 
 
     $.ajax({
@@ -107,8 +107,7 @@ $(document).ready(function () {
         var file = $("#files")[0].files[0];
         var upload = new Upload(file);
 
-        // maby check size or type here with upload.getSize() and upload.getType()
-
+        
         // execute upload
         upload.doUpload();
     });
